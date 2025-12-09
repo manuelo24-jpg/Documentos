@@ -17,7 +17,7 @@ def main():
     # Asegúrate de que la ruta al data.yaml sea absoluta o correcta relativa
     print("Iniciando entrenamiento...")
     results = model.train(
-        data="datasets/masas_agua/data.yaml",  # Ruta a tu dataset
+        data="content/datasets/masas_agua/data.yaml",  # ← RUTA CORREGIDA
         epochs=10,          # Reducido a 10 para la clase (para que dé tiempo)
         imgsz=640,          # Tamaño de imagen
         plots=True,         # Generar gráficas de pérdida
@@ -38,7 +38,7 @@ def main():
     # 4. INFERENCIA (PREDICCIÓN) EN NUEVAS IMÁGENES
     # ========================================================================
     # Usamos una imagen de prueba del dataset
-    test_img_path = "datasets/masas_agua/images/test/imagen_1.jpg"  # CAMBIAR POR UNA IMAGEN REAL
+    test_img_path = "content/datasets/masas_agua/images/test/imagen_1.jpg"  # ← RUTA CORREGIDA
     
     if os.path.exists(test_img_path):
         print(f"Realizando predicción en: {test_img_path}")

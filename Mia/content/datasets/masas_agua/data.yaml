@@ -1,0 +1,8 @@
+# Rutas a las imágenes
+train: content/datasets/masas_agua/images/train
+val: content/datasets/masas_agua/images/val
+test: content/datasets/masas_agua/images/test   # opcional pero recomendado
+
+# Clases del dataset
+names:
+  - agua
